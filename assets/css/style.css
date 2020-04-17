@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A2A2E;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.dark-text {
+    color: #2A2A2E;
+    margin-top: 1rem;
+}
+
+.project-img > img {
+    height: 18em;
+    object-fit: cover;
+}
+
+.about-img {
+    max-width: 30em;
+    background-color: #2A2A2E;
+    border-radius: 10px;
+    border-top: 10px solid #ff274e;
+    box-shadow: 0 4px 8px 0
+    rgba(0,0,0,0.2);
+}
+
+.background-img {
+    position: relative;
+    background-image:  url("../img/laptop-computer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.background-img:before {
+    position: absolute;
+    content: "";
+    background: #2A2A2E;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 0;
+} 
+
+.container {
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.large {
+    height: 100vh;
+    position: relative;
+}
+
+.large-inner {
+    padding-top: 12vh;
+}
+
+.large-inner_heading {
+    margin-bottom: 1rem;
+}
+
+.name {
+    margin-bottom: 1.25rem;
+    color: #ff274e;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.line {
+    color: #ff274e;
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.info-heading {
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+.info-connect {
+    margin: 2rem;
+}
+
+.info-connect_heading {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+
+.info-connect_social {
+    margin-top: 1rem;
+}
+
+.linkedin {
+    color: #007BB4;
+    margin-left: 1rem;
+    font-size: 24px;
+}
+
+.github {
+    font-size: 24px;
+}
+
+.phone {
+    margin-left: 1rem;
+    font-size: 24px;
+    color: #29BC00;
+}
+
+.mail {
+    margin-left: 1rem;
+    font-size: 24px;
+    color: #0071C5;
+}
+
+.resume {
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.about {
+    background-color:#F8FAFA;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.about-heading {
+    font-size: 3.25em;
+    color: rgba(117, 121, 149, 0.5);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.btn {
+    color:white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    opacity: 1;
+  }
+
+.btn-50 {
+    width: 50%;
+    border-radius: 0;   
+}
+
+.btn-primary {
+    background-color: #ff274e;
+}
+
+.btn-secondary {
+    background-color: #737894;
+}
+
+.footer {
+    background-color:#2A2A2E;
+    color:white;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+
+@media screen and (min-width: 680px) {
+    .info-connect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-connect_social {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 920px) {
+    .project-card {
+        max-width: 25em;
+    }
+
+    .project-img > img {
+        height: 15em;
+        object-fit: fill;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .line {
+        margin: 3rem 0 3rem 0;
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-right {
+        margin-top: 3rem;
+        max-width: 600px;
+        margin-left: 1rem;
+    }
+
+    .about-left {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-card {
+        max-width: 30em;
+    }
+
+    .project-img > img {
+        height: 20em;
+        object-fit: fill;
+    }
+
+    .info-heading {
+        font-size: 20px;
+    }
+
+    .about-left {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project-card {
+        max-width: 25em;
+    }
+
+    .project-img > img {
+        height: 15em;
+        object-fit: fill;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .project-card {
+        max-width: 30em;
+    }
+
+    .project-img > img {
+        height: 20em;
+        object-fit: fill;
+    }
+}
